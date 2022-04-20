@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>snowman</title>
+<link rel="stylesheet" href="style.css"><!--同じ階層にstyle.cssをいれとくこと-->
+</head>
+<body>
+<div class="wrapper">
+<!--↑ここまでコピペ↑bodyとwrapperで二重に囲むのは慣習-->
+    <h1>
+     <nav class="nav">
+			<ul>
+                <li><a><img src="img/pause.png" alt="Pause" onclick="audiopause()"></a></li>
+            </ul>
+	</nav>
+    </h1>
+    
+	<!-- <h1 class="centering">バント</h1> -->
+	<div id="cards">
+
+		<div class="card">
+			<a class="picture">
+				<img src="img/meme.png" class="imgscaling" id="img_meme" alt="" onclick="audioplay('meme')">
+			</a>
+		</div>
+
+		<div class="card">
+			<a class="picture">
+				<img src="img/you.png" class="imgscaling" id="img_you" alt="" onclick="audioplay('you')">
+			</a>
+		</div>
+
+		<div class="card">
+			<a class="picture">
+				<img src="img/bruno.png" class="imgscaling" id="img_bruno" alt="" onclick="audioplay('bruno')">
+			</a>
+		</div>
+
+	</div>
+    
+    <div class='results'>
+    <p><span id="result"></span></p>
+    </div>
+
+	<div id="audiowrapper">
+		<audio id="audioplayer"></audio>
+	</div>
+
+    <script src="./sample.js">
+	</script>
+
+    	<!--フッター-->
+	<footer class="footer">
+		</footer>
+	<!--フッターここまで-->
+</div>
+
+</body>
+</html>
